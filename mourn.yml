@@ -1,0 +1,15 @@
+name: ROMEK-XD-V2
+services:
+  - name: Romek-xd-v2service
+    type: web
+    ports:
+      - 5000
+    routes:
+      - path: "/"
+    build:
+      type: docker
+      dockerfile: ./Dockerfile
+    regions:
+      - fra
+      - sin
+      
